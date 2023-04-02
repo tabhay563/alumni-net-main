@@ -1,0 +1,28 @@
+.scrollToTop{
+    background-color:  var(--dark-blue);
+    border-radius: 100%;
+    position: fixed;
+    height: 4rem;
+    width: 4rem;
+    bottom: 40px;
+    right: 40px;
+    z-index: 2000;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease-in-out;
+    svg{
+        color: white;
+        font-size: 2rem;
+       
+    }
+
+    &:hover{
+        background-color: #fff;
+        svg{
+            color: var(--dark-blue)
+        }
+    }
+
+}

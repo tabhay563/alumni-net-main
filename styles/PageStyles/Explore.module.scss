@@ -1,0 +1,87 @@
+.container {
+  height: calc(100vh - 80px);
+  width: 100vw;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 4rem;
+
+  .searchbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0; 
+    transition: all 100ms ease-in-out ;
+
+   &:focus, &:focus-within{
+      .search_submit{
+        background-color: var(--brand-blue);
+        color: var(--white);
+      }
+
+      .search_input {
+        outline: none;
+        border: 1px solid var(--brand-blue);
+        font-family: montserrat;
+        font-size: 1rem;
+      }
+    }
+
+    .search_submit {
+      box-sizing: border-box;
+      height: 3rem;
+      width: 3rem;
+      font-size: large;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 0px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      background-color: var(--white);
+      cursor: pointer;
+      transition: inherit;
+    }
+
+    .search_input {
+      box-sizing: border-box;
+      height: 3rem;
+      width: 60vw;
+      border: 0px;
+      padding: 0 1rem;
+      transition: inherit;
+
+      &::placeholder{
+          font-family: montserrat;
+          font-size: 1rem;
+      }
+    }
+  }
+
+  h2 {
+    font-family: montserrat;
+    color: var(--slate-grey);
+    font-weight: 500;
+    margin-left: 4px;
+  }
+
+  .popular_colleges {
+    height: 300px;
+    width: 90vw;
+    margin-bottom: 2rem;
+  }
+
+  .active_colleges{
+    height: 300px;
+    width: 90vw;
+
+  }
+
+}
+
+.card_container {
+  display: flex;
+  gap: 2rem;
+  margin-left: 1.5rem;
+  overflow: auto;
+}

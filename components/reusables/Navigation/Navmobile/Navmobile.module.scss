@@ -1,0 +1,52 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.15);
+  background: var(--white);
+  
+  .menu_button {
+    font-size: 2rem;
+  }
+
+  .searchbox {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+
+    .input_search {
+      appearance: none;
+      padding: 1rem;
+      background: var(--alice-blue);
+      box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+      border-radius: 16px;
+      border: none;
+      width: 70vw;
+      max-width: 60vw;
+
+      &:focus-visible {
+        outline: 1px solid var(--slate-grey);
+      }
+    }
+  }
+
+  .profile {
+
+    .profilepic{
+          cursor: pointer;
+          height: 48px;
+          width: 48px;
+          border-radius: 50%;
+          border: 3px solid var(--brand-blue);
+    }
+  }
+}

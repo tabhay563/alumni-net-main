@@ -1,0 +1,87 @@
+.main {
+  width: 80vw;
+  height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+
+  box-shadow: 0px 0.807818px 0.807818px rgba(0, 0, 0, 0.25);
+
+  &__heading {
+    color: var(--dark-blue);
+    font-family: Montserrat;
+    text-align: center;
+  }
+
+  .input__container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .label {
+        padding-left: 1rem;
+        color: black;
+      font-family: Montserrat;
+    }
+
+    > textarea {
+        background: var(--alice-blue);
+        min-width: 90%;
+        border-radius: 7px;
+        border: none;
+        outline: none;
+        padding: 0.5rem 1rem;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 16px;
+        min-height: 18rem;
+
+        &::placeholder {
+          color: var(--slate-grey);
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 13px;
+          line-height: 16px;
+
+          /* identical to box height */
+          //   text-align: center;
+        }
+      }
+  }
+  .btn_container {
+      display:flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 1rem;
+    .btn {
+      transition: all 0.3s ease-in;
+      padding: 0.68rem 2rem;
+      border: none;
+      color: var(--white);
+      background-color: var(--brand-blue);
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 0.68rem;
+      line-height: 13px;
+      text-align: center;
+      cursor: pointer;
+      margin: 0.2rem 1rem 0 0;
+
+      &:hover {
+        background-color: var(--brand-blue);
+        color: var(--white);
+        border-radius: 1rem;
+      }
+
+      &:active {
+        transition: all 0.1s ease;
+        transform: scale(0.9);
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.container{
+  background-color: var(--background-grey);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@mixin blob {
+  position: absolute;
+  @media only screen and (max-width: 1000px) {
+      display: none;
+  }
+}
+
+.TR{
+  @include blob();
+  width: 161px;
+  height: 145px;
+  right: 0;
+  top: -50px;
+}
+
+.TL{
+  @include blob();
+  width: 251px;
+  height: 209px;
+  left: 186px;
+  top: -90px;
+}
+
+.BR{
+  @include blob();
+  width: 243px;
+  height: 198px;
+  left: 1074px;
+  bottom: 80px;
+}
+
+.BL{
+  @include blob();
+  width: 259px;
+  height: 211px;
+  left: 71px;
+  bottom: -80px;
+}

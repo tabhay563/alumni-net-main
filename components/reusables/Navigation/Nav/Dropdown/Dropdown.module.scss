@@ -1,0 +1,35 @@
+.container {
+  background-color: var(--white);
+  display: grid;
+  box-shadow: 8.5px 8.3px 10px rgba(0, 0, 0, 0.04),
+    97px 95px 80px rgba(0, 0, 0, 0.09);
+
+  position: absolute;
+  right: 60px;
+  top: 70px;
+  
+  width: 170px;
+  height: auto;
+  padding: 0 1rem;
+  padding-top: 1rem;
+  border: 1.5px solid var(--solitude);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+  border-top-right-radius: 0;
+
+  .listitem {
+    width: 100%;
+    text-align: center;
+  border-bottom: 1px solid var(--solitude);
+  margin: 1px 3px;
+    height: 30px;
+
+    font-weight: 500;
+    text-transform: capitalize;
+    border-radius: 8px;
+
+    &:hover {
+      color: var(--brand-blue);
+    }
+  }
+}

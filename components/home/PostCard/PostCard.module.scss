@@ -1,0 +1,90 @@
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  background: var(--white);
+
+  border: 1.5px solid var(--solitude);
+  box-sizing: border-box;
+  border-radius: 8px;
+
+  .user_info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    
+    gap: 1rem;
+
+    .profile_pic{
+      border-radius: 50%;
+    }
+    .info{
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 3px;
+
+      .name {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+
+        color: var(--dark-blue);
+      }
+
+      .timestamp{
+        display: flex;
+        width: 100%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.8rem;
+        color: var(--slate-grey);
+      }
+    }
+  }
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 2rem;
+
+    .textcontent{
+      display: flex;
+      width: 100%;
+    }
+
+    .mediacontent{
+      display: flex;
+      width: 100%;
+    }
+  }
+
+  .controls{
+    font-size: 1.5rem;
+    color: var(--slate-grey);
+    gap: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    & *:hover, *:active {
+      color: var(--brand-blue);
+    }
+    
+    .counter{
+      font-size: 0.6rem;
+      align-self: flex-start;
+      justify-content: flex-start;
+    }
+  }
+}
